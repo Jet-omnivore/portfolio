@@ -11,6 +11,8 @@
   @theme {
     --color-secondary: rgb(8 8 7); 
     --color-text-accent: rgb(209 209 199);
+    --color-text-secondary: rgb(107 100 92);
+    --spacing: 4px;
   }
 
   :root {
@@ -28,7 +30,11 @@
   }
 
   h1 {
-    @apply text-9xl text-text-accent;
+    @apply text-9xl;
+  }
+
+  h3 {
+    @apply text-xl font-medium;
   }
 }
 
@@ -43,4 +49,8 @@ body::after {
   filter: url(#grainy);
   z-index: 1000;
   opacity: 20%;
+}
+
+* {
+  box-sizing: border-box;
 }

@@ -1,70 +1,75 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import Showcase from "./Showcase";
-import { ScrollTrigger } from "gsap/all";
+import { SplitText } from "gsap/all";
 import { useRef } from "react";
-//import Spline from '@splinetool/react-spline';
 
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
-
-function HeroText({divClass="", textClass="", ariaHidden=false}) {
+function Icon() {
   return (
-    <div aria-hidden={ariaHidden} className={`w-full h-full flex justify-center items-center absolute ${divClass}`}>
-      <h1 className={`font-semibold relative hero-text ${textClass}`}>Jet Omnivore</h1>
-    </div>
-  );
+    <>
+      <div className="m-3 w-[38px] h-[38px] mix-blend-difference bg-text-accent rounded-full"></div>
+    </>
+  )
 }
-
-//function Jet() {
-
-  //function onLoad(spline) {
-    //const spacecraft = spline.findObjectByName('jet'); 
-    //if (spacecraft == undefined) return;
-    //gsap.to(spacecraft.rotation, {
-      //repeat: -1,
-      //angle: Math.PI,
-      //duration: 0.8
-    //})
-  //}
-
-  //return (
-    //<Spline onLoad={onLoad} scene="https://prod.spline.design/xh7GX4GtHviHlf-C/scene.splinecode" />
-  //);
-//}
 
 export default function Hero() {
 
   useGSAP(() => {
-    //gsap.to(".hero-text", {
-        //scale: 50,
-        //transformOrigin: "56.02% 60%",
-        //fontSize: "16vw",
-        //duration: 1.5,
-        //delay: 3,
-        //yoyo: true,
-      //}
-    //);
+    const split = SplitText.create(".split-char", {
+      type: "chars",
+      charsClass: "char++"
+    });
 
-    //gsap.to(".upper-hero-text", {
-      //duration: 0,
-      //repleat: -1,
-      //yoyo: true,
-      //delay: 3,
-      //color: "black",
-    //})
-  });
+    gsap.from(split.chars, {
+      autoAlpha: 0.5,
+      yPercent: 105,
+      ease: "elastic.out",
+      delay: 0.2,
+      duration: 1,
+      stagger: 0.1
+    });
+    
+    //let tl = gsap.timeline();
+
+    ////tl.from(
+      ////".char1", {
+        ////autoAlpha: 0,
+        ////x: -50,
+      ////}
+    ////);
+  
+    //tl.from(
+      //".char1, .char4", {
+        //duration: 0.6,
+        //autoAlpha: 0.5,
+        //ease: "bounce.out",
+        //delay: 0.2,
+        //yPercent: -200
+      //}
+    //).from(".char2, .char3, .char5, .char6, .char7, .char8, .char9, .char10, .char11", {
+      //autoAlpha: 0,
+      //yPercent: 100,
+      //ease: "elastic.out",
+      //duration: 1,
+      //stagger: 0.05
+    //}, "-=0.4")
+     
+  })
 
   return (
-    <div className="relative">
-      <section className="h-screen relative overflow-hidden"> 
-        <HeroText ariaHidden={true} divClass="-z-100 mix-blend-multiply bg-black" />
-        <HeroText divClass="mix-blend-screen bg-secondary" textClass="upper-hero-text"/>
-    {/*<Jet/>*/}
-      </section>
-
-      <Showcase/>
-
-    </div>
+    <section id="hero" className="bg-[linear-gradient(var(--color-text-accent))] bg-no-repeat bg-right bg-size-[50%] w-full h-full relative overflow-hidden">
+      <nav className="flex justify-end py-4 px-12">
+        <Icon /> 
+        <Icon /> 
+        <Icon /> 
+      </nav>
+      <div className="absolute bottom-[0] w-full flex justify-center">
+        <div>
+        <h3 className="mb-[2em] text-text-secondary split-lines">I build games, apps, websites, and graphics.</h3>
+        <h1 className="mix-blend-difference text-[min(12vw,230px)] leading-[0.684] text-text-accent split-char"> <strong>JET OMNIVORE</strong> </h1>
+        </div>
+      </div>
+    
+    </section>
   )
 }
