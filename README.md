@@ -1,6 +1,6 @@
 # 🌐 My Portfolio Website (Work in Progress)
 
-This is the source code for my personal portfolio — a site that brings together my technical projects, creative experiments, and self-taught journey as a developer.
+This is the source code for my personal portfolio. A site that brings together my technical projects, creative experiments, and self-taught journey as a developer.
 
 The goal is simple: to let my work speak for me.
 
@@ -46,7 +46,7 @@ The goal is simple: to let my work speak for me.
 
 ## 💡 Why This Site Exists
 
-This site is a personal archive of things I’ve built — not just to get hired, but to stay accountable to my growth.
+This site is a personal archive of things I’ve built, not just to get hired, but to stay accountable to my growth.
 
 I believe in learning by building. Many of these projects were born from curiosity, late-night hacking, and the simple joy of solving problems.
 
