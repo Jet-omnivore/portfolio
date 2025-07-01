@@ -1,12 +1,61 @@
-# React + Vite
+# 🌐 My Portfolio Website (Work in Progress)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the source code for my personal portfolio — a site that brings together my technical projects, creative experiments, and self-taught journey as a developer.
 
-Currently, two official plugins are available:
+The goal is simple: to let my work speak for me.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎯 What This Portfolio Covers
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🧱 **Web Development Projects**  
+  Websites, tools, and user-focused interfaces
+
+- 🎮 **Game Development**  
+  Doom-style renderer, voxel engine (Pygame), Nuclear Throne-inspired game (LÖVE2D)
+
+- 📱 **Mobile Development**  
+  College NSS Android App and experiments
+
+- 🔬 **Side Projects & Experiments**  
+  Rendering engines, AI tools, and more
+
+- 🫂 **Special Thanks**  
+  A page dedicated to friends and mentors who’ve shaped my journey
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: [React](https://react.dev)
+- **Styling**: [TailwindCSS](https://tailwindcss.com)
+- **Deployment**: GitHub Pages
+
+---
+
+## 🚧 Current Progress
+
+- [x] Project setup and folder structure
+- [x] Basic layout and theming
+- [ ] Projects grid with filters and previews
+- [ ] About Me section with timeline or story
+- [ ] Special Thanks section
+- [ ] Mobile responsiveness and polish
+
+---
+
+## 💡 Why This Site Exists
+
+This site is a personal archive of things I’ve built — not just to get hired, but to stay accountable to my growth.
+
+I believe in learning by building. Many of these projects were born from curiosity, late-night hacking, and the simple joy of solving problems.
+
+---
+
+## 🧑‍💻 How to Run It Locally
+
+```bash
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
+npm install
+npm run dev
