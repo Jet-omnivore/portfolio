@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Color+Emoji&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+  @theme {
+    --color-secondary: rgb(8 8 7); 
+    --color-text-accent: rgb(209 209 199);
+    --color-text-secondary: rgb(107 100 92);
+    --spacing: 4px;
+  }
+
+  :root {
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: dark light;
+    color: rgba(255, 255, 255, 0.87);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: aliased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    @apply text-9xl;
+  }
+
+  h3 {
+    @apply text-xl font-medium;
+  }
+
+  body {
+    @apply bg-secondary bg-[linear-gradient(var(--color-text-accent))] bg-no-repeat bg-right bg-size-[50%] 
+  }
+}
+
+body::after {
+  pointer-events: none;
+  content: '';
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: url(#grainy);
+  z-index: 1000;
+  opacity: 20%;
+}
+
+* {
+  box-sizing: border-box;
+}
