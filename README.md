@@ -8,17 +8,16 @@ The goal is simple: to let my work speak for me.
 
 ## 🎯 What This Portfolio Covers
 
-- 🧱 **Web Development Projects**  
+- 🧱 **My Projects**  
   Websites, tools, and user-focused interfaces
-
-- 🎮 **Game Development**  
   Doom-style renderer, voxel engine (Pygame), Nuclear Throne-inspired game (LÖVE2D)
-
-- 📱 **Mobile Development**  
   College NSS Android App and experiments
 
 - 🔬 **Side Projects & Experiments**  
   Rendering engines, AI tools, and more
+
+-    **About me**
+  A short story of who I am and what I care about.
 
 - 🫂 **Special Thanks**  
   A page dedicated to friends and mentors who’ve shaped my journey
