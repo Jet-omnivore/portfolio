@@ -38,7 +38,7 @@
   }
 
   body {
-    @apply bg-secondary bg-[linear-gradient(var(--color-text-accent))] bg-no-repeat bg-right bg-size-[50%] 
+    @apply bg-secondary bg-[linear-gradient(var(--color-text-accent))] bg-repeat-y bg-right bg-size-[50%] 
   }
 }
 
