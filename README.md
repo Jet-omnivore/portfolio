@@ -16,7 +16,7 @@ The goal is simple: to let my work speak for me.
 - 🔬 **Side Projects & Experiments**  
   Rendering engines, AI tools, and more
 
--    **About me**
+-    **About me** 
   A short story of who I am and what I care about.
 
 - 🫂 **Special Thanks**  
